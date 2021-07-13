@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">curing</string>
+
+
+    <string name="home">首页</string>
+    <string name="mine">我的</string>
+
+    <string name="home_title">公路综合养护数据展示系统</string>
+
+
+
+    <string name="my_info">个人信息</string>
+    <string name="my_change_psd">修改密码</string>
+    <string name="my_about">关于我们</string>
+    <string name="my_setting">设置</string>
+
+
+    <string name="exit_prompt">再按一次返回退出程序</string>
+
+    <string name="home_basic_data_road_network">路网基础数据</string>
+    <string name="home_curing_plan">养护计划与投资</string>
+    <string name="home_road_curing">公路养护工程</string>
+    <string name="home_road_evaluate">公路路况评定</string>
+    <string name="home_data_road_network">路网运行数据</string>
+    <string name="home_road_manager">公路安全应急管理</string>
+    <string name="home_law_enforcement">养护行政执法</string>
+    <string name="home_road_help">公路治超和救援服务</string>
+    <string name="home_other">其他</string>
+
+    <string name="home_curing">养护</string>
+    <string name="home_contingency_managemen">路网运行监测与应急管理</string>
+    <string name="law_enforcement_and_overload_control">路政执法与治超</string>
+
+    <string name="login_btn">登录</string>
+    <string name="forget_password">忘记密码？</string>
+
+    <string name="save">保存</string>
+
+</resources>

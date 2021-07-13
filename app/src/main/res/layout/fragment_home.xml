@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bg_gray"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_home_top"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/main_color"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:text="@string/home_title"
+            android:textColor="@color/text_white"
+            android:gravity="center_vertical"
+            android:drawablePadding="10dp"
+            app:drawableStartCompat="@mipmap/ic_home_logo" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_home_search"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            />
+
+    </RelativeLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ctl_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:padding="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/rl_home_top"
+        android:background="@drawable/shape_bg_home"
+        >
+
+        <TextView
+            android:id="@+id/tv_curing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/home_curing_plan"
+            android:textColor="@color/text_black"
+            android:textSize="16dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_home_basic_data_road_network"
+            android:text="@string/home_basic_data_road_network"
+            app:layout_constraintTop_toBottomOf="@+id/tv_curing"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tv_home_curing_plan"
+            app:layout_constraintHorizontal_weight="1"
+            android:layout_marginTop="10dp"
+            app:drawableTopCompat="@mipmap/ic_home_basic_data_road_network"
+            style="@style/home_button"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_home_curing_plan"
+            android:text="@string/home_curing_plan"
+            app:layout_constraintTop_toTopOf="@+id/tv_home_basic_data_road_network"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_home_basic_data_road_network"
+            app:layout_constraintStart_toEndOf="@+id/tv_home_basic_data_road_network"
+            app:layout_constraintEnd_toStartOf="@+id/tv_home_curing_road_project"
+            app:layout_constraintHorizontal_weight="1"
+            app:drawableTopCompat="@mipmap/ic_home_curing_plan"
+            style="@style/home_button"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_home_curing_road_project"
+            android:text="@string/home_road_curing"
+            app:layout_constraintTop_toTopOf="@+id/tv_home_basic_data_road_network"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_home_basic_data_road_network"
+            app:layout_constraintStart_toEndOf="@+id/tv_home_curing_plan"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_weight="1"
+            app:drawableTopCompat="@mipmap/ic_home_curing_road_project"
+            style="@style/home_button"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_home_road_evaluate"
+            android:text="@string/home_road_evaluate"
+            app:layout_constraintTop_toBottomOf="@+id/tv_home_basic_data_road_network"
+            app:layout_constraintStart_toStartOf="@+id/tv_home_basic_data_road_network"
+            app:layout_constraintEnd_toEndOf="@+id/tv_home_basic_data_road_network"
+            app:drawableTopCompat="@mipmap/ic_home_road_evaluate"
+            style="@style/home_button"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_home_other"
+            android:text="@string/home_other"
+            app:layout_constraintTop_toTopOf="@+id/tv_home_road_evaluate"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_home_road_evaluate"
+            app:layout_constraintStart_toStartOf="@+id/tv_home_curing_plan"
+            app:layout_constraintEnd_toEndOf="@+id/tv_home_curing_plan"
+            app:drawableTopCompat="@mipmap/ic_home_other"
+            style="@style/home_button"
+            />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ctl_contingency_managemen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:padding="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/ctl_home"
+        android:background="@drawable/shape_bg_home"
+        >
+
+        <TextView
+            android:id="@+id/tv_contingency_managemen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/home_contingency_managemen"
+            android:textColor="@color/text_black"
+            android:textSize="16dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_home_data_road_network"
+            android:text="@string/home_data_road_network"
+            app:layout_constraintTop_toBottomOf="@+id/tv_contingency_managemen"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tv_home_road_manager"
+            app:layout_constraintHorizontal_weight="0.8"
+            app:drawableTopCompat="@mipmap/ic_home_data_road_network"
+            style="@style/home_button"
+            android:layout_marginTop="10dp"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_home_road_manager"
+            android:text="@string/home_road_manager"
+            app:layout_constraintTop_toTopOf="@+id/tv_home_data_road_network"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_home_data_road_network"
+            app:layout_constraintStart_toEndOf="@+id/tv_home_data_road_network"
+            app:layout_constraintEnd_toStartOf="@+id/tv_home_null"
+            app:layout_constraintHorizontal_weight="1"
+            app:drawableTopCompat="@mipmap/ic_home_road_manager"
+            style="@style/home_button"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_home_null"
+            app:layout_constraintTop_toTopOf="@+id/tv_home_data_road_network"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_home_data_road_network"
+            app:layout_constraintStart_toEndOf="@+id/tv_home_road_manager"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_weight="0.8"
+            app:drawableTopCompat="@mipmap/ic_home_curing_road_project"
+            style="@style/home_button"
+            android:visibility="invisible"
+            />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ctl_law_enforcement_and_overload_control"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:padding="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/ctl_contingency_managemen"
+        android:background="@drawable/shape_bg_home"
+        >
+
+        <TextView
+            android:id="@+id/tv_law_enforcement_and_overload_control"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/law_enforcement_and_overload_control"
+            android:textColor="@color/text_black"
+            android:textSize="16dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_home_law_enforcement"
+            android:text="@string/home_law_enforcement"
+            app:layout_constraintTop_toBottomOf="@+id/tv_law_enforcement_and_overload_control"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tv_home_overload_control"
+            app:layout_constraintHorizontal_weight="0.8"
+            app:drawableTopCompat="@mipmap/ic_home_law_enforcement"
+            style="@style/home_button"
+            android:layout_marginTop="10dp"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_home_overload_control"
+            android:text="@string/home_road_help"
+            app:layout_constraintTop_toTopOf="@+id/tv_home_law_enforcement"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_home_law_enforcement"
+            app:layout_constraintStart_toEndOf="@+id/tv_home_law_enforcement"
+            app:layout_constraintEnd_toStartOf="@+id/tv_home_last_null"
+            app:layout_constraintHorizontal_weight="1"
+            app:drawableTopCompat="@mipmap/ic_home_overload_control"
+            style="@style/home_button"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_home_last_null"
+            app:layout_constraintTop_toTopOf="@+id/tv_home_law_enforcement"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_home_law_enforcement"
+            app:layout_constraintStart_toEndOf="@+id/tv_home_overload_control"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_weight="0.8"
+            app:drawableTopCompat="@mipmap/ic_home_curing_road_project"
+            style="@style/home_button"
+            android:visibility="invisible"
+            />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
